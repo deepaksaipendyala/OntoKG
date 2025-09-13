@@ -1,0 +1,72 @@
+{
+  "materials": [
+    {"name": "BaTiO3", "formula": "BaTiO3", "type": "perovskite"},
+    {"name": "PbTiO3", "formula": "PbTiO3", "type": "perovskite"},
+    {"name": "SrTiO3", "formula": "SrTiO3", "type": "perovskite"},
+    {"name": "Bi2Te3", "formula": "Bi2Te3", "type": "chalcogenide"},
+    {"name": "PbTe", "formula": "PbTe", "type": "chalcogenide"},
+    {"name": "SnSe", "formula": "SnSe", "type": "chalcogenide"},
+    {"name": "CH3NH3PbI3", "formula": "CH3NH3PbI3", "type": "perovskite"},
+    {"name": "Si", "formula": "Si", "type": "elemental"},
+    {"name": "CdTe", "formula": "CdTe", "type": "compound"},
+    {"name": "CsSnI3", "formula": "CsSnI3", "type": "perovskite"},
+    {"name": "CaTiO3", "formula": "CaTiO3", "type": "perovskite"},
+    {"name": "KNbO3", "formula": "KNbO3", "type": "perovskite"},
+    {"name": "Bi2Se3", "formula": "Bi2Se3", "type": "chalcogenide"},
+    {"name": "AgSbTe2", "formula": "AgSbTe2", "type": "chalcogenide"},
+    {"name": "CIGS", "formula": "CuInGaSe2", "type": "compound"}
+  ],
+  "properties": [
+    {"name": "dielectric_constant", "description": "Relative permittivity of the material"},
+    {"name": "band_gap", "description": "Energy gap between valence and conduction bands"},
+    {"name": "thermal_conductivity", "description": "Ability to conduct heat"},
+    {"name": "electrical_conductivity", "description": "Ability to conduct electricity"},
+    {"name": "zt", "description": "Thermoelectric figure of merit"},
+    {"name": "absorption_coefficient", "description": "Light absorption ability"},
+    {"name": "formation_energy", "description": "Energy required to form the compound"},
+    {"name": "melting_point", "description": "Temperature at which material melts"},
+    {"name": "crystal_structure", "description": "Crystalline arrangement of atoms"},
+    {"name": "magnetic_properties", "description": "Magnetic behavior of the material"}
+  ],
+  "applications": [
+    {"name": "capacitor", "description": "Energy storage device"},
+    {"name": "thermoelectric_device", "description": "Heat to electricity conversion"},
+    {"name": "solar_cell", "description": "Photovoltaic energy conversion"},
+    {"name": "battery", "description": "Electrochemical energy storage"},
+    {"name": "sensor", "description": "Environmental or physical sensing"},
+    {"name": "catalyst", "description": "Chemical reaction acceleration"},
+    {"name": "superconductor", "description": "Zero electrical resistance material"},
+    {"name": "semiconductor", "description": "Electronic device component"}
+  ],
+  "has_property_relations": [
+    {"material": "BaTiO3", "property": "dielectric_constant", "value": 1500, "unit": "relative", "confidence": 1.0},
+    {"material": "PbTiO3", "property": "dielectric_constant", "value": 200, "unit": "relative", "confidence": 1.0},
+    {"material": "SrTiO3", "property": "dielectric_constant", "value": 300, "unit": "relative", "confidence": 1.0},
+    {"material": "CaTiO3", "property": "dielectric_constant", "value": 150, "unit": "relative", "confidence": 1.0},
+    {"material": "KNbO3", "property": "dielectric_constant", "value": 700, "unit": "relative", "confidence": 1.0},
+    {"material": "Bi2Te3", "property": "zt", "value": 0.8, "unit": "dimensionless", "confidence": 1.0},
+    {"material": "PbTe", "property": "zt", "value": 0.8, "unit": "dimensionless", "confidence": 1.0},
+    {"material": "SnSe", "property": "zt", "value": 2.6, "unit": "dimensionless", "confidence": 1.0},
+    {"material": "Bi2Se3", "property": "zt", "value": 0.4, "unit": "dimensionless", "confidence": 1.0},
+    {"material": "AgSbTe2", "property": "zt", "value": 1.4, "unit": "dimensionless", "confidence": 1.0},
+    {"material": "CH3NH3PbI3", "property": "band_gap", "value": 1.6, "unit": "eV", "confidence": 1.0},
+    {"material": "CsSnI3", "property": "band_gap", "value": 1.3, "unit": "eV", "confidence": 1.0},
+    {"material": "Si", "property": "band_gap", "value": 1.1, "unit": "eV", "confidence": 1.0},
+    {"material": "CdTe", "property": "band_gap", "value": 1.5, "unit": "eV", "confidence": 1.0},
+    {"material": "CIGS", "property": "band_gap", "value": 1.2, "unit": "eV", "confidence": 1.0},
+    {"material": "BaTiO3", "property": "band_gap", "value": 3.2, "unit": "eV", "confidence": 1.0},
+    {"material": "SrTiO3", "property": "band_gap", "value": 3.2, "unit": "eV", "confidence": 1.0},
+        {"material": "CH3NH3PbI3", "property": "absorption_coefficient", "value": 100000, "unit": "cm-1", "confidence": 1.0},
+        {"material": "CsSnI3", "property": "absorption_coefficient", "value": 80000, "unit": "cm-1", "confidence": 1.0}
+  ],
+  "used_in_relations": [
+    {"material": "BaTiO3", "application": "capacitor", "confidence": 1.0, "source": "curated", "validated_by": "literature"},
+    {"material": "PbTiO3", "application": "capacitor", "confidence": 1.0, "source": "curated", "validated_by": "literature"},
+    {"material": "Bi2Te3", "application": "thermoelectric_device", "confidence": 1.0, "source": "curated", "validated_by": "literature"},
+    {"material": "PbTe", "application": "thermoelectric_device", "confidence": 1.0, "source": "curated", "validated_by": "literature"},
+    {"material": "CH3NH3PbI3", "application": "solar_cell", "confidence": 1.0, "source": "curated", "validated_by": "literature"},
+    {"material": "Si", "application": "solar_cell", "confidence": 1.0, "source": "curated", "validated_by": "literature"},
+    {"material": "CdTe", "application": "solar_cell", "confidence": 1.0, "source": "curated", "validated_by": "literature"},
+    {"material": "CIGS", "application": "solar_cell", "confidence": 1.0, "source": "curated", "validated_by": "literature"}
+  ]
+}

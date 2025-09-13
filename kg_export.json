@@ -1,0 +1,132 @@
+{
+  "nodes": {
+    "Material": [
+      {
+        "name": "BaTiO3",
+        "type": "perovskite",
+        "formula": "BaTiO\u2083",
+        "id": 0
+      },
+      {
+        "name": "SrTiO3",
+        "type": "perovskite",
+        "formula": "SrTiO\u2083",
+        "id": 1
+      },
+      {
+        "name": "Bi2Te3",
+        "type": "chalcogenide",
+        "formula": "Bi\u2082Te\u2083",
+        "id": 2
+      },
+      {
+        "name": "SnSe",
+        "type": "chalcogenide",
+        "formula": "SnSe",
+        "id": 3
+      },
+      {
+        "name": "CH3NH3PbI3",
+        "type": "perovskite",
+        "formula": "CH\u2083NH\u2083PbI\u2083",
+        "id": 4
+      }
+    ],
+    "Application": [
+      {
+        "description": "Energy storage device",
+        "name": "capacitor",
+        "id": 5
+      },
+      {
+        "description": "Heat to electricity conversion",
+        "name": "thermoelectric_device",
+        "id": 6
+      },
+      {
+        "description": "Photovoltaic energy conversion",
+        "name": "solar_cell",
+        "id": 7
+      }
+    ],
+    "Property": [
+      {
+        "description": "Relative permittivity",
+        "name": "dielectric_constant",
+        "id": 8
+      },
+      {
+        "description": "Energy gap between bands",
+        "name": "band_gap",
+        "id": 9
+      },
+      {
+        "description": "Thermoelectric figure of merit",
+        "name": "zt",
+        "id": 10
+      }
+    ]
+  },
+  "edges": [
+    {
+      "source": "seed_data",
+      "target": "capacitor",
+      "relationship": "USED_IN",
+      "confidence": 0.9
+    },
+    {
+      "source": "seed_data",
+      "target": "dielectric_constant",
+      "relationship": "HAS_PROPERTY",
+      "value": 1500
+    },
+    {
+      "source": "seed_data",
+      "target": "capacitor",
+      "relationship": "USED_IN",
+      "confidence": 0.8
+    },
+    {
+      "source": "seed_data",
+      "target": "dielectric_constant",
+      "relationship": "HAS_PROPERTY",
+      "value": 300
+    },
+    {
+      "source": "seed_data",
+      "target": "thermoelectric_device",
+      "relationship": "USED_IN",
+      "confidence": 0.9
+    },
+    {
+      "source": "seed_data",
+      "target": "zt",
+      "relationship": "HAS_PROPERTY",
+      "value": 0.8
+    },
+    {
+      "source": "seed_data",
+      "target": "thermoelectric_device",
+      "relationship": "USED_IN",
+      "confidence": 0.95
+    },
+    {
+      "source": "seed_data",
+      "target": "zt",
+      "relationship": "HAS_PROPERTY",
+      "value": 2.6
+    },
+    {
+      "source": "seed_data",
+      "target": "solar_cell",
+      "relationship": "USED_IN",
+      "confidence": 0.85
+    },
+    {
+      "source": "seed_data",
+      "target": "band_gap",
+      "relationship": "HAS_PROPERTY",
+      "value": 1.6
+    }
+  ]
+}
